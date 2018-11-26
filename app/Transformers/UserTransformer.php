@@ -2,6 +2,7 @@
 
 namespace App\Transformers;
 
+use App\User;
 use League\Fractal;
 use League\Fractal\TransformerAbstract;
 use League\Fractal\Resource\Collection;
@@ -15,7 +16,7 @@ class UserTransformer extends TransformerAbstract
      *
      * @var array
      */
-    protected $availableIncludes = [];
+    protected $availableIncludes = ['subscribers'];
 
     /**
      * List of resources to automatically include
@@ -27,15 +28,21 @@ class UserTransformer extends TransformerAbstract
     /**
      * Transform object into a generic array
      *
-     * @var $resource
+     * @var $user
      * @return array
      */
-    public function transform($resource)
+    public function transform(User $user)
     {
         return [
 
-            'id' => $resource->id,
+            'id' => $user->id,
+            'name' => $user->name,
+            'email' => $user->email,
 			
         ];
+    }
+    
+    public function includeSubscriber(User $user){
+        return $this->collection($user->subscribers, new SubscriberTransformer);
     }
 }

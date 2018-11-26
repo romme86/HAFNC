@@ -16,3 +16,11 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::group(['namespace' => 'Subscribers', 'prefix' => '/subscribers'], function(){
+    Route::get('/',['as' => 'subscribers', 'uses' => 'SubscriberController@index']);
+    Route::get('/{article}',['as' => 'subscribers.show', 'uses' => 'SubscriberController@show']);
+    Route::put('/',['as' => 'subscriber.store', 'uses' => 'SubscriberController@store']);
+    Route::delete('/{article}',['as' => 'subscriber.delete', 'uses' => 'SubscriberController@destroy']);
+    Route::post('/{article}',['as' => 'subscriber.update', 'uses' => 'SubscriberController@update']);
+});
