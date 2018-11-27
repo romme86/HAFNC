@@ -15,7 +15,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://127.0.0.1/api/subscribers",
+					"raw": "http://127.0.0.1/api/subscribers/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -25,7 +25,8 @@
 					],
 					"path": [
 						"api",
-						"subscribers"
+						"subscribers",
+						""
 					]
 				}
 			},
@@ -39,7 +40,7 @@
 					{
 						"key": "Content-Type",
 						"name": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
+						"value": "application/json",
 						"type": "text"
 					},
 					{
