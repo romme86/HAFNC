@@ -13,11 +13,16 @@ https://www.docker.com/
 
 After this you need to clone this repo in a local folder:
 
-`$ git clone [repo_address]`
+`git clone https://github.com/romme86/HAFNC.git`
+
+Than you have to go **inside the project directory** and clone Laradock:
+
+`git clone https://github.com/Laradock/laradock.git`
 
 Than you must enter the laradock folder inside the project and run:
 
-`$ docker-compose up -d nginx mysql phpmyadmin workspace` 
+`docker-compose up -d nginx mysql phpmyadmin workspace`
+
 And it's up!
 (yes it runs on nginx not apache2)
 
@@ -27,7 +32,10 @@ i configured this laradock installation to use mysql 5 because the new 8 version
 ### TESTING
 
 in the files you can see:
-"subscribers.postman_collection.json" you can import this in your Postman UI to execute the commands and test the code.
+
+**"subscribers.postman_collection.json"**
+
+you can import this in your Postman UI to execute the commands and test the code.
 I did started building the testing environment with laravel
 but i had to install phpunit and i was getting bugs and the time was running out for the deadline so... you can test with postman =)
 
