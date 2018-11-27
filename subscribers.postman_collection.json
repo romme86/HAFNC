@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "ddbbc7c8-9a46-4536-b73e-e782532ee38b",
+		"name": "subscribers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all subscribers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1/api/subscribers",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"api",
+						"subscribers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "store subscriber",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "email",
+						"value": "asdasd@asd.asd",
+						"type": "text"
+					},
+					{
+						"key": "name",
+						"value": "asda",
+						"type": "text"
+					},
+					{
+						"key": "address",
+						"value": "sdlfkjslsdkfg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"bobo@gmail.com\",\n\t\"address\" : \"via garibaldi\",\n\t\"name\":\"Ajeje Brazorf\",\n\t\"state\":\"Italy\",\n\t\"active\":\"true\",\n\t\"unsubscribed\":0,\n\t\"junk\":0,\n\t\"bounced\":1,\n\t\"unconfirmed\":1\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/api/subscribers/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"api",
+						"subscribers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get subscriber",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1/api/subscribers/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"api",
+						"subscribers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update subscriber",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user_id\":1,\n\t\"email\" : \"colossus@gugu.com\",\n\t\"address\" : \"Deadpool square\",\n\t\"junk\":0,\n\t\"bounced\":1,\n\t\"unconfirmed\":1\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/api/subscribers/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"api",
+						"subscribers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "destroy subscriber",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1/api/subscribers/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"api",
+						"subscribers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
