@@ -89,3 +89,5 @@ you can import this in your Postman UI to execute the commands and test the code
 I did started building the testing environment with laravel
 but i had to install phpunit and i was getting bugs and the time was running out for the deadline so... you can test with postman =)
 
+**IMPORTANT:** when testing update with postman i inserted `@gugu.com` on purpose as a domain, that is going to fail. to update modify with `@gmail.com`
+
