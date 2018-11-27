@@ -19,6 +19,32 @@ Than you have to go **inside the project directory** and clone Laradock:
 
 `git clone https://github.com/Laradock/laradock.git`
 
+Enable the laradock **.env** file:
+
+`cp env-example .env`
+
+Edit the **.env** file
+
+you have this:
+`
+MYSQL_VERSION=latest
+MYSQL_DATABASE=default
+MYSQL_USER=default
+MYSQL_PASSWORD=secret
+MYSQL_PORT=3306
+MYSQL_ROOT_PASSWORD=root
+`
+you must change with this:
+
+`
+MYSQL_VERSION=5
+MYSQL_DATABASE=hafnc
+MYSQL_USER=root
+MYSQL_PASSWORD=ciao
+MYSQL_PORT=3306
+MYSQL_ROOT_PASSWORD=ciao
+`
+
 Than you must enter the laradock folder inside the project and run:
 
 `docker-compose up -d nginx mysql phpmyadmin workspace`
