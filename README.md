@@ -1,5 +1,5 @@
 
-# hallo this is a very simple API to manage subscribers in your mysql database. 
+# A very simple API to manage subscribers in your mysql database. 
 
 The enviroment runs with Laradock, that is a Docker configuration of images built for Laravel.
 
