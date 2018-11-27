@@ -24,11 +24,11 @@ Generate production key:
 `php artisan key:generate`
 
 Than you have to go **inside the project directory** and clone Laradock:
-
+`cd HAFNC`
 `git clone https://github.com/Laradock/laradock.git`
 
 You must enter the laradock folder inside the project and enable the laradock **.env** file:
-
+`cd laradock`
 `cp env-example .env`
 
 Edit the **.env** file
