@@ -15,6 +15,10 @@ After this you need to clone this repo in a local folder:
 
 `git clone https://github.com/romme86/HAFNC.git`
 
+Than you have to go **inside the project directory**:
+
+`cd HAFNC`
+
 Update dependacies:
 
 `composer update`
@@ -23,12 +27,14 @@ Generate production key:
 
 `php artisan key:generate`
 
-Than you have to go **inside the project directory** and clone Laradock:
-`cd HAFNC`
+Clone Laradock:
+
 `git clone https://github.com/Laradock/laradock.git`
 
 You must enter the laradock folder inside the project and enable the laradock **.env** file:
+
 `cd laradock`
+
 `cp env-example .env`
 
 Edit the **.env** file
