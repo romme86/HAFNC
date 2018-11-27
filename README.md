@@ -12,10 +12,13 @@ To run the enviroment you need to install Docker on your machine:
 https://www.docker.com/
 
 After this you need to clone this repo in a local folder:
-$ git clone [repo_address]
+
+`$ git clone [repo_address]`
 
 Than you must enter the laradock folder inside the project and run:
-$ docker-compose up -d nginx mysql phpmyadmin workspace 
+
+`$ docker-compose up -d nginx mysql phpmyadmin workspace` 
+And it's up!
 (yes it runs on nginx not apache2)
 
 pretty neat uh?
